@@ -8,6 +8,7 @@ use Livewire\WithPagination;
 use Cart;
 use App\Models\Category;
 
+
 class SearchComponent extends Component
 {
     public $sorting;

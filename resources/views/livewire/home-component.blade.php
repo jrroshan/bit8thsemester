@@ -8,7 +8,7 @@
 						
 					
 						<div class="item-slide">
-							<img src="{{ asset('assets/images/slider')}}/{{$slide->image}}" alt="" class="img-slide">
+							<img src="{{ asset('assets/images/sliders')}}/{{$slide->image}}" alt="" class="img-slide">
 							<div class="slide-info slide-1">
 								<h2 class="f-title"><b>{{$slide->title}}</b></h2>
 								<span class="subtitle">{{$slide->subtitle}}</span>
@@ -21,7 +21,7 @@
 			</div>
 
 			<!--BANNER-->
-			<div class="wrap-banner style-twin-default">
+			{{-- <div class="wrap-banner style-twin-default">
 				<div class="banner-item">
 					<a href="#" class="link-banner banner-effect-1">
 						<figure><img src="{{ asset('assets/images/home-1-banner-1.jpg')}}" alt="" width="580" height="190"></figure>
@@ -32,7 +32,7 @@
 						<figure><img src="{{ asset('assets/images/home-1-banner-2.jpg')}}" alt="" width="580" height="190"></figure>
 					</a>
 				</div>
-			</div>
+			</div> --}}
 
 			<!--On Sale-->
 			@if ($sproducts->count() > 0 && $sale->status == 1 && $sale->sale_date > Carbon\Carbon::now())
@@ -68,11 +68,11 @@
 			<!--Latest Products-->
 			<div class="wrap-show-advance-info-box style-1">
 				<h3 class="title-box">Latest Products</h3>
-				<div class="wrap-top-banner">
+				{{-- <div class="wrap-top-banner">
 					<a href="#" class="link-banner banner-effect-2">
 						<figure><img src="{{ asset('assets/images/digital-electronic-banner.jpg') }}" width="1170" height="240" alt=""></figure>
 					</a>
-				</div>
+				</div> --}}
 				<div class="wrap-products">
 					<div class="wrap-product-tab tab-style-1">						
 						<div class="tab-contents">
@@ -106,11 +106,11 @@
 			<!--Product Categories-->
 			<div class="wrap-show-advance-info-box style-1">
 				<h3 class="title-box">Product Categories</h3>
-				<div class="wrap-top-banner">
+				{{-- <div class="wrap-top-banner">
 					<a href="#" class="link-banner banner-effect-2">
 						<figure><img src="{{asset('assets/images/fashion-accesories-banner.jpg') }}" width="1170" height="240" alt=""></figure>
 					</a>
-				</div>
+				</div> --}}
 				<div class="wrap-products">
 					<div class="wrap-product-tab tab-style-1">
 						<div class="tab-control">

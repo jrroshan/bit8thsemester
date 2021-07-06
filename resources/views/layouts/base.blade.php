@@ -100,6 +100,10 @@
 													</li>
 
 													<li class="menu-item">
+														<a title="All Coupon" href="{{route('admin.coupons')}}">All Coupon</a>
+													</li>
+
+													<li class="menu-item">
 														<a href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
 
 													</li>
@@ -165,7 +169,7 @@
 					</div>
 				</div>
 
-				<div class="nav-section header-sticky">
+				{{-- <div class="nav-section header-sticky">
 					<div class="header-nav-section">
 						<div class="container">
 							<ul class="nav menu-nav clone-main-menu" id="mercado_haead_menu" data-menuname="Sale Info" >
@@ -176,7 +180,7 @@
 								<li class="menu-item"><a href="#" class="link-term">Top rated items</a><span class="nav-label hot-label">hot</span></li>
 							</ul>
 						</div>
-					</div>
+					</div> --}}
 
 					<div class="primary-nav-section">
 						<div class="container">
@@ -294,7 +298,7 @@
 								</div>
 							</div>
 
-							<div class="wrap-footer-item footer-item-second">
+							{{-- <div class="wrap-footer-item footer-item-second">
 								<h3 class="item-header">Sign up for newsletter</h3>
 								<div class="item-content">
 									<div class="wrap-newletter-footer">
@@ -304,7 +308,7 @@
 										</form>
 									</div>
 								</div>
-							</div>
+							</div> --}}
 
 						</div>
 
@@ -373,7 +377,7 @@
 							</div>
 						</div>
 
-						<div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
+						{{-- <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
 							<div class="wrap-footer-item">
 								<h3 class="item-header">Dowload App</h3>
 								<div class="item-content">
@@ -385,12 +389,12 @@
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> --}}
 
 					</div>
 				</div>
 
-				<div class="wrap-back-link">
+				{{-- <div class="wrap-back-link">
 					<div class="container">
 						<div class="back-link-box">
 							<h3 class="backlink-title">Quick Links</h3>
@@ -438,11 +442,11 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> --}}
 
 			</div>
 
-			<div class="coppy-right-box">
+			<div class="coppy-right-box" style="margin-top: 30px">
 				<div class="container">
 					<div class="coppy-right-item item-left">
 						<p class="coppy-right-text">Copyright © 2020 Surfside Media. All rights reserved</p>

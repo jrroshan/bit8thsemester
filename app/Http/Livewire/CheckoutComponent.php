@@ -105,7 +105,7 @@ class CheckoutComponent extends Component
         
         if($this->paymentmode == 'card'){
             $this->validate([
-                'card_no'=>'required|numeric|max:16',
+                'card_no'=>'required|numeric',
                 'exp_month'=>'required|numeric',
                 'exp_year'=>'required|numeric',
                 'cvc'=>'required|numeric'

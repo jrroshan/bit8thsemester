@@ -17,7 +17,7 @@
                     </div>
                     <div class="panel-body">
                         @if(Session::has('order_message'))
-                            <div class="alert alert-success" role="alert">{{Session::get('order_message')}}</div>
+                        <div class="alert alert-success" role="alert">{{Session::get('order_message')}}</div>
                         @endif
                         <table class="table table-striped">
                             <thead>
@@ -53,16 +53,24 @@
                                     <td><a href="{{route('admin.orderdetails',['order_id'=>$order->id])}}"
                                             class="btn btn-info btn-sm">Details</a></td>
                                     <td>
+                                        @if($order->status !== 'delivered' && $order->status !== 'cancelled')
+
+
                                         <div class="dropdown">
                                             <button class="btn btn-success btn-sm dropdown-toggle" type="button"
                                                 data-toggle="dropdown">
                                                 Status
                                                 <span class="caret"></span> </button>
                                             <ul class="dropdown-menu">
-                                                <li><a href="#" wire:click.prevent="updateOrderStatus({{$order->id}},'delivered')">Delievered</a></li>
-                                                <li><a href="#" wire:click.prevent="updateOrderStatus({{$order->id}},'canceled')">Canceled</a></li>
+                                                <li><a href="#"
+                                                        wire:click.prevent="updateOrderStatus({{$order->id}},'delivered')">Delievered</a>
+                                                </li>
+                                                <li><a href="#"
+                                                        wire:click.prevent="updateOrderStatus({{$order->id}},'cancelled')">Cancelled</a>
+                                                </li>
                                             </ul>
                                         </div>
+                                        @endif
                                     </td>
                                 </tr>
                                 @endforeach

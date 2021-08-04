@@ -4,8 +4,8 @@
 
         <div class="wrap-breadcrumb">
             <ul>
-                <li class="item-link"><a href="#" class="link">home</a></li>
-                <li class="item-link"><span>Digital & Electronics</span></li>
+                <li class="item-link"><a href="/" class="link">home</a></li>
+                {{-- <li class="item-link"><span>Digital & Electronics</span></li> --}}
             </ul>
         </div>
         <div class="row">
@@ -194,7 +194,7 @@
                     </div>
                 </div><!-- Size --> --}}
 
-                <div class="widget mercado-widget widget-product">
+                {{-- <div class="widget mercado-widget widget-product">
                     <h2 class="widget-title">Popular Products</h2>
                     <div class="widget-content">
                         <ul class="products">
@@ -256,7 +256,7 @@
 
                         </ul>
                     </div>
-                </div><!-- brand widget-->
+                </div><!-- brand widget--> --}}
 
             </div><!--end sitebar-->
 

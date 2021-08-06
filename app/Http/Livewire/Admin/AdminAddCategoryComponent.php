@@ -33,6 +33,7 @@ class AdminAddCategoryComponent extends Component
         $category->slug = $this->slug;
         $category->save();
         session()->flash('message','Category has been created Successfully');
+        return redirect()->route('admin.categories');
     }
 
     public function render()

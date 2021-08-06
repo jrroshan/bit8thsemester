@@ -19,7 +19,7 @@ class CreateSettingsTable extends Migration
             $table->string('phone');
             $table->string('phone2');
             $table->string('address');
-            $table->string('map');
+            $table->string('map',500);
             $table->string('twitter');
             $table->string('facebook');
             $table->string('instagram');

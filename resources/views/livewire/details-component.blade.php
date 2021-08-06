@@ -22,10 +22,10 @@
             <div class="col-lg-9 col-md-8 col-sm-8 col-xs-12 main-content-area">
                 <div class="wrap-product-detail">
                     <div class="detail-media">
-                        <div class="product-gallery">
+                        <div class="product-gallery" wire:ignore>
                             <ul class="slides">
 
-                                <li data-thumb="{{asset('assets/images/products')}}/{{$product->image}}')}}">
+                                <li data-thumb="{{asset('assets/images/products')}}/{{$product->image}}">
                                     <img src="{{asset('assets/images/products')}}/{{$product->image}}"
                                         alt="{{$product->name}}" />
                                 </li>
@@ -34,9 +34,9 @@
                                 @endphp
                                 @foreach ($images as $image)
                                 @if($image)
-                                    
-                                
-                                <li data-thumb="{{asset('assets/images/products')}}/{{$image}}')}}">
+
+
+                                <li data-thumb="{{asset('assets/images/products')}}/{{$image}}">
                                     <img src="{{asset('assets/images/products')}}/{{$image}}"
                                         alt="{{$product->name}}" />
                                 </li>
@@ -276,7 +276,7 @@
                 <div class="widget mercado-widget widget-product">
                     <h2 class="widget-title">Popular Products</h2>
                     <div class="widget-content">
-                        <ul class="products">
+                        <ul class="products" wire:ignore>
                             @foreach ($popular_products as $popular_product)
 
 
@@ -312,7 +312,7 @@
             <div class="single-advance-box col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="wrap-show-advance-info-box style-1 box-in-site">
                     <h3 class="title-box">Related Products</h3>
-                    <div class="wrap-products">
+                    <div class="wrap-products" wire:ignore>
                         <div class="products slide-carousel owl-carousel style-nav-1 equal-container" data-items="5"
                             data-loop="false" data-nav="true" data-dots="false"
                             data-responsive='{"0":{"items":"1"},"480":{"items":"2"},"768":{"items":"3"},"992":{"items":"3"},"1200":{"items":"5"}}'>

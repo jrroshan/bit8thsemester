@@ -72,7 +72,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
+                        <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12 pull-right">
 
                             <div class="wrap-footer-item">
                                 <h3 class="item-header">Hot Line</h3>
@@ -98,7 +98,7 @@
 
                         </div>
 
-                        <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12 box-twin-content ">
+                        {{-- <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12 box-twin-content ">
                             <div class="row">
                                 <div class="wrap-footer-item twin-item">
                                     <h3 class="item-header">My Account</h3>
@@ -131,13 +131,13 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
 
                     </div>
 
                     <div class="row">
 
-                        <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
+                        {{-- <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
                             <div class="wrap-footer-item">
                                 <h3 class="item-header">We Using Safe Payments:</h3>
                                 <div class="item-content">
@@ -146,7 +146,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
 
                         <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
                             <div class="wrap-footer-item">
@@ -245,19 +245,19 @@
 
 <div class="coppy-right-box" style="margin-top: 30px">
     <div class="container">
-        <div class="coppy-right-item item-left">
-            <p class="coppy-right-text">Copyright © 2020 Surfside Media. All rights reserved</p>
+        <div class="coppy-right-item justify-content-md-center">
+            <p class="coppy-right-text">Copyright © 2020 All rights reserved</p>
         </div>
         <div class="coppy-right-item item-right">
             <div class="wrap-nav horizontal-nav">
-                <ul>
+                {{-- <ul>
                     <li class="menu-item"><a href="about-us.html" class="link-term">About us</a></li>
                     <li class="menu-item"><a href="privacy-policy.html" class="link-term">Privacy Policy</a>
                     </li>
                     <li class="menu-item"><a href="terms-conditions.html" class="link-term">Terms &
                             Conditions</a></li>
                     <li class="menu-item"><a href="return-policy.html" class="link-term">Return Policy</a></li>
-                </ul>
+                </ul> --}}
             </div>
         </div>
         <div class="clearfix"></div>

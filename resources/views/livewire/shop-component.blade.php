@@ -45,10 +45,10 @@
                             </select>
                         </div>
 
-                        <div class="change-display-mode">
+                        {{-- <div class="change-display-mode">
                             <a href="#" class="grid-mode display-mode active"><i class="fa fa-th"></i>Grid</a>
                             <a href="list.html" class="list-mode display-mode"><i class="fa fa-th-list"></i>List</a>
-                        </div>
+                        </div> --}}
 
                     </div>
 
@@ -158,9 +158,9 @@
                     </div>
                 </div><!-- brand widget--> --}}
 
-                <div class="widget mercado-widget filter-widget price-filter">
-                    <h2 class="widget-title">Price<span class="text-info">${{$min_price}} - ${{$max_price}}</span></h2>
-                    <div class="widget-content" style="padding:10px 5px 40px 5px;">
+                <div class="widget mercado-widget filter-widget price-filter"  wire:ignore>
+                    <h2 class="widget-title">Price<span class="text-info" wire:ignore>${{$min_price}} - ${{$max_price}}</span></h2>
+                    <div class="widget-content" style="padding:10px 5px 40px 5px;"  wire:ignore>
                         <div id="slider" wire:ignore></div>
                     </div>
                 </div><!-- Price-->

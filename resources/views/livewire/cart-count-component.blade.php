@@ -5,6 +5,8 @@
             <div class="left-info">
                 @if(Cart::instance('cart')->count() >0)
                 <span class="index">{{Cart::instance('cart')->count()}} items</span>
+                @else
+                <span class="index">0 items</span>
                 @endif
                 <span class="title">CART</span>
             </div>

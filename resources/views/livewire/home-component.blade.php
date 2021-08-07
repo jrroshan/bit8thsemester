@@ -12,7 +12,7 @@
 							<div class="slide-info slide-1">
 								<h2 class="f-title"><b>{{$slide->title}}</b></h2>
 								<span class="subtitle">{{$slide->subtitle}}</span>
-								<p class="sale-info">Only price: <span class="price">${{$slide->price}}</span></p>
+								<p class="sale-info">Only price: <span class="price">Rs.{{$slide->price}}</span></p>
 								<a href="{{$slide->link}}" class="btn-link">Shop Now</a>
 							</div>
 						</div>

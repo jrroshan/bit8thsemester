@@ -123,7 +123,7 @@ class CheckoutComponent extends Component
 
         $order->firstname = $this->firstname;
         $order->lastname = $this->lastname;
-        $order->email = $this->email;
+        $order->email = Auth::user()->email;
         $order->mobile = $this->mobile;
         $order->line1 = $this->line1;
         $order->line2 = $this->line2;

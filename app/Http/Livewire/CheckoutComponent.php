@@ -257,7 +257,8 @@ class CheckoutComponent extends Component
     }
 
     public function sendOrderConfirmationMail($order){
-        Mail::to($order->email)->send(new OrderMail($order));
+        // dd(Auth::user()->email);
+        Mail::to(Auth::user()->email)->send(new OrderMail($order));
     }
 
     public function verifyForCheckout(){

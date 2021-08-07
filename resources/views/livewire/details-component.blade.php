@@ -1,12 +1,13 @@
 <main id="main" class="main-site">
 
     <style>
-        .regprice(font-weight: 300;
-            font-size:13px !important;
-            color:#aaaaaa !important;
+        .regprice {
+            font-weight: 300;
+            font-size: 13px !important;
+            color: #aaaaaa !important;
             text-decoration: line-through;
-            padding-left:10px;
-        )
+            padding-left: 10px;
+        }
     </style>
 
     <div class="container">
@@ -90,10 +91,10 @@
                                     alt=""></a>
                         </div>
                         @if($product->sale_price > 0 && $sale->status == 1 && $sale->sale_date > Carbon\Carbon::now())
-                        <div class="wrap-price"><span class="product-price">${{$product->sale_price}}</span></div>
-                        <del><span class="product-price regprice">${{$product->regular_price}}</span></del>
+                        <div class="wrap-price"><span class="product-price">Rs. {{$product->sale_price}}</span></div>
+                        <del><span class="product-price regprice">Rs. {{$product->regular_price}}</span></del>
                         @else
-                        <div class="wrap-price"><span class="product-price">${{$product->regular_price}}</span></div>
+                        <div class="wrap-price"><span class="product-price">Rs. {{$product->regular_price}}</span></div>
                         @endif
                         <div class="stock-info in-stock">
                             <p class="availability">Availability: <b>{{$product->stock_status}}</b></p>
@@ -294,7 +295,7 @@
                                         <a href="{{route('product.details',['slug'=>$popular_product->slug])}}"
                                             class="product-name"><span>{{$popular_product->name}}</span></a>
                                         <div class="wrap-price"><span
-                                                class="product-price">${{$popular_product->regular_price}}</span></div>
+                                                class="product-price">Rs.{{$popular_product->regular_price}}</span></div>
                                     </div>
                                 </div>
                             </li>
@@ -337,8 +338,8 @@
                                 <div class="product-info">
                                     <a href="{{route('product.details',['slug'=>$r_product->slug])}}"
                                         class="product-name"><span>{{$r_product->name}}</span></a>
-                                    <div class="wrap-price"><span
-                                            class="product-price">${{$r_product->regular_price}}</span></div>
+                                    <div class="wrap-price"><span class="product-price">Rs.
+                                            {{$r_product->regular_price}}</span></div>
                                 </div>
                             </div>
                             @endforeach

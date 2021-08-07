@@ -93,7 +93,7 @@
                                     </div>
                                     <div class="product-info">
                                         <a href="{{route('product.details',['slug'=>$product->slug])}}" class="product-name"><span>{{$product->name}}</span></a>
-                                        <div class="wrap-price"><span class="product-price">{{$product->regular_price}}</span></div>
+                                        <div class="wrap-price"><span class="product-price">Rs. {{$product->regular_price}}</span></div>
                                         <a href="#" class="btn add-to-cart" wire:click.prevent="store({{$product->id}},'{{$product->name}}',{{$product->regular_price}})">Add To Cart</a>
                                         <div class="product-wish">
                                             @if($witems->contains($product->id))
@@ -159,7 +159,7 @@
                 </div><!-- brand widget--> --}}
 
                 <div class="widget mercado-widget filter-widget price-filter"  wire:ignore>
-                    <h2 class="widget-title">Price<span class="text-info" wire:ignore>${{$min_price}} - ${{$max_price}}</span></h2>
+                    <h2 class="widget-title">Price<span class="text-info" wire:ignore>Rs.{{$min_price}} - Rs.{{$max_price}}</span></h2>
                     <div class="widget-content" style="padding:10px 5px 40px 5px;"  wire:ignore>
                         <div id="slider" wire:ignore></div>
                     </div>

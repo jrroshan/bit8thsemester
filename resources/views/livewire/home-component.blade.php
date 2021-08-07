@@ -90,7 +90,7 @@
 											</div>
 											<div class="product-info">
 												<a href="{{route('product.details',['slug'=>$lproduct->slug])}}" class="product-name"><span>{{$lproduct->name}}</span></a>
-												<div class="wrap-price"><span class="product-price">${{$lproduct->regular_price}}</span></div>
+												<div class="wrap-price"><span class="product-price">Rs. {{$lproduct->regular_price}}</span></div>
 											</div>
 										</div>
 									@endforeach

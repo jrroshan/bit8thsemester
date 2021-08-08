@@ -77,8 +77,8 @@
                                 <h3 class="item-header"></h3>
                                 <div class="item-content">
                                     <div class="wrap-contact-detail">
-                                        <img src="">
-                                        <h5>{{$setting->slogan}}</h5>
+                                        <img src="{{asset('assets/images/logo')}}/{{$setting->logo}}" width="180">
+                                        <h5 style="text-align:center; color: black;"><strong>{{$setting->slogan}}</strong></h5>
                                     </div>
                                 </div>
                             </div>

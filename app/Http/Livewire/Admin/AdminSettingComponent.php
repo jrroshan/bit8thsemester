@@ -75,7 +75,7 @@ class AdminSettingComponent extends Component
         if (!$setting) {
             $setting = new Setting();
         }
-        
+
         $setting->email = $this->email;
         $setting->phone = $this->phone;
         $setting->phone2 = $this->phone2;
@@ -86,9 +86,11 @@ class AdminSettingComponent extends Component
         $setting->instagram = $this->instagram;
         $setting->youtube = $this->youtube;
         $setting->slogan = $this->slogan;
-        $imageName = Carbon::now()->timestamp . '.' . $this->logo->extension();
-        $this->logo->storeAs('logo', $imageName);
-        $setting->logo = $imageName;
+        if ($this->logo !== $setting->logo) {
+            $imageName = Carbon::now()->timestamp . '.' . $this->logo->extension();
+            $this->logo->storeAs('logo', $imageName);
+            $setting->logo = $imageName;
+        }
         $setting->save();
         session()->flash('message', 'Settings has been saved successfully');
     }

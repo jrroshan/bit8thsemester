@@ -72,6 +72,20 @@
                             </div>
                         </div>
 
+                        <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
+                            <div class="wrap-footer-item">
+                                <h3 class="item-header"></h3>
+                                <div class="item-content">
+                                    <div class="wrap-contact-detail">
+                                        <img src="">
+                                        <h5>{{$setting->slogan}}</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
                         <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12 pull-right">
 
                             <div class="wrap-footer-item">

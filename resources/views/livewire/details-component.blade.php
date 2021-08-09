@@ -86,10 +86,7 @@
                                 {!!$product->short_description!!}
                             </ul>
                         </div>
-                        <div class="wrap-social">
-                            <a class="link-socail" href="#"><img src="{{asset('assets/images/social-list.png')}}"
-                                    alt=""></a>
-                        </div>
+
                         @if($product->sale_price > 0 && $sale->status == 1 && $sale->sale_date > Carbon\Carbon::now())
                         <div class="wrap-price"><span class="product-price">Rs. {{$product->sale_price}}</span></div>
                         <del><span class="product-price regprice">Rs. {{$product->regular_price}}</span></del>
@@ -121,8 +118,6 @@
                                 to Cart</a>
                             @endif
                             <div class="wrap-btn">
-                                <a href="#" class="btn btn-compare">Add Compare</a>
-                                <a href="#" class="btn btn-wishlist">Add Wishlist</a>
                             </div>
                         </div>
                     </div>
@@ -295,7 +290,8 @@
                                         <a href="{{route('product.details',['slug'=>$popular_product->slug])}}"
                                             class="product-name"><span>{{$popular_product->name}}</span></a>
                                         <div class="wrap-price"><span
-                                                class="product-price">Rs.{{$popular_product->regular_price}}</span></div>
+                                                class="product-price">Rs.{{$popular_product->regular_price}}</span>
+                                        </div>
                                     </div>
                                 </div>
                             </li>

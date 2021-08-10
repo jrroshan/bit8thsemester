@@ -183,12 +183,12 @@
             connect : true,
             range: {
                 'min' : 1,
-                'max' : 1000
+                'max' : 1000,
             },
             pips:{
                 mode:'steps',
                 stepped:true,
-                density:4
+                density:4,
             }
         });
 

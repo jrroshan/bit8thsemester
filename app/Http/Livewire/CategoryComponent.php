@@ -22,7 +22,7 @@ class CategoryComponent extends Component
     }
 
     public function store($product_id,$product_name,$product_price){
-        Cart::add($product_id,$product_name,1,$product_price)->associate('App\Models\Product');
+        Cart::instance('cart')->add($product_id,$product_name,1,$product_price)->associate('App\Models\Product');
         session()->flash('success_message','item added in Cart');
         return redirect()->route('product.cart');
     }
